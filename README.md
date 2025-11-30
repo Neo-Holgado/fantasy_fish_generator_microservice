@@ -24,6 +24,46 @@ All fish generated will be in the following format:
 }
 ```
 
+## Fantasy Fish Possibilities
+The following are lists of the possible values for each key:
+```python
+# Prefix for Name
+PREFIXES = [
+    "Shimmering", "Ancient", "Crystal", "Shadow", "Ethereal",
+    "Molten", "Void", "Glowing", "Stormforged", "Icy", "Tiny"
+]
+
+# Species for Name
+SPECIES = [
+    "Trout", "Carp", "Eel", "Ray", "Salmon", "Wyrm",
+    "Guppy", "Finback", "Stalker", "Scale Serpent"
+]
+
+DESCRIPTIONS = [
+    "A mysterious creature said to be older than time.",
+    "Glows with a faint magical light.",
+    "Known to appear only under a full moon.",
+    "Radiates intense elemental energy.",
+    "A rare fish whispered about in old legends.",
+    "Found only in enchanted waters.",
+    "Beautiful and dangerous in equal measure.",
+    "A favorite among wizards and alchemists.",
+    "Its scales shimmer with hidden power.",
+    "A shy but powerful elemental fish."
+]
+
+RARITIES = ["Common", "Uncommon", "Rare", "Legendary", "Mythic"]
+
+# Value will be anywhere between the listed values
+RARITY_VALUE = {
+    "Common": (5, 15),
+    "Uncommon": (16, 40),
+    "Rare": (41, 100),
+    "Legendary": (101, 250),
+    "Mythic": (251, 500)
+}
+```
+
 ## Using the `generate_fish` Service  
 ### REQUEST Format  
 To use the generate_fish service, you need to send a JSON-formatted message to the server, which includes:   
